@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vaibhav Jamloki | Frontend Developer & Cybersecurity Enthusiast</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo-container">
+        <img src="logo.png" alt="Logo" class="nav-logo" />
+        <div class="logo">Vaibhav Jamloki</div>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">My Projects</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo-container">
+        <img src="logo.png" alt="Logo" class="nav-logo" />
+        <div class="logo">Vaibhav Jamloki</div>
+      </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">My Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact Us</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="profie-pic.png" alt="Vaibhav Jamloki profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Vaibhav Jamloki</h1>
+        <div class="typewriter-container">
+          <p class="section__text__p2">I'm a <span class="typewriter"></span></p>
+        </div>
+        <p class="section__text__p2">Future digital guardian Cyber enthusiast,</br> unlocking security secrets with finesse and fervor.</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/vaibhav-jamloki/'"
+          />
+          <img
+            src="github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/vaibhav09981'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="about-pic.jpg" alt="abt">
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>2+ years <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Btech<br/>Cybersecurity IOT and Blockchain Technology</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              HELLO My name is Vaibhav jamloki, a tech maven driven by an insatiable curiosity for cyber security. With a sharp intellect and passion for unraveling digital intricacies, I am on a mission to fortify the virtual realm against emerging threats. Eager to learn and adept at navigating the ever-evolving cybersecurity landscape, I am poised to become a formidable force in safeguarding the digital future. Watch me as I transforms challenges into opportunities, one encryption at a time.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React JS</h3>
+                  <p>Currently Learning</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Next JS</h3>
+                  <p>Will be learning</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Other Programming Languages</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C#</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </article>
+            <article>
+              <img
+                src="checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>C++</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      
+      <div class="projects-slider-container">
+        <div class="slider-nav slider-prev" onclick="moveSlider('prev')">&lt;</div>
+        <div class="slider-nav slider-next" onclick="moveSlider('next')">&gt;</div>
+        
+        <div class="projects-slider" id="projectsSlider">
+          <!-- Original projects -->
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <img
+              src="Weather-App.png"
+              alt="Project 1"
+              class="project-img"
+            />
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/vaibhav09981/Currency-converter'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://jolly-platypus-597edc.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <img
+              src="Tic-Tac-Toe Game.png"
+              alt="Project 2"
+              class="project-img"
+            />
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/vaibhav09981/tic-tac-toe/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://tiktactoe01.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <img
+              src="snakenlad.png"
+              alt="Project 3"
+              class="project-img"
+            />
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/vaibhav09981/Snake-and-Ladder'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://snakenladderio.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          
+          <!-- Duplicate projects for continuous scrolling -->
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <img
+              src="Weather-App.png"
+              alt="Project 1"
+              class="project-img"
+            />
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/vaibhav09981/Currency-converter'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://jolly-platypus-597edc.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <img
+              src="Tic-Tac-Toe Game.png"
+              alt="Project 2"
+              class="project-img"
+            />
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/vaibhav09981/tic-tac-toe/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://tiktactoe01.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          
+          <div class="details-container color-container">
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <img
+              src="snakenlad.png"
+              alt="Project 3"
+              class="project-img"
+            />
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/vaibhav09981/Snake-and-Ladder'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://snakenladderio.netlify.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <img
+        src="arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      
+      <div class="contact-form-container">
+        <h2 class="form-heading">Send Me a Message</h2>
+        <p class="form-subheading">Fill out the form below and I'll get back to you as soon as possible.</p>
+        
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Vaibhav" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="abc123@gmail.com" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Describe your message here" required></textarea>
+          </div>
+          
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+      
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:vabhavjj99@gmail.com">vabhavjj99@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/vaibhav-jamloki/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <h2 class="footer-title">Follow Me</h2>
+      
+      <div class="social-container">
+        <a href="https://github.com/vaibhav09981" class="social-item" target="_blank" rel="noopener">
+          <img src="github.png" alt="GitHub" class="social-icon">
+          <span class="social-name">GitHub</span>
+        </a>
+        
+        <a href="https://www.instagram.com/vaibhav_vj06?igsh=MTRnbDZzcmMyMnY2NQ==" class="social-item" target="_blank" rel="noopener">
+          <img src="instagram.webp" alt="Instagram" class="social-icon">
+          <span class="social-name">Instagram</span>
+        </a>
+        
+        <a href="https://www.linkedin.com/in/vaibhav-jamloki/" class="social-item" target="_blank" rel="noopener">
+          <img src="linkedin.png" alt="LinkedIn" class="social-icon">
+          <span class="social-name">LinkedIn</span>
+        </a>
+        
+        <a href="https://x.com/VaibhavJ099" class="social-item" target="_blank" rel="noopener">
+          <img src="twitter.webp" alt="Twitter" class="social-icon">
+          <span class="social-name">Twitter</span>
+        </a>
+      </div>
+      
+      <div class="footer-divider"></div>
+      
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+      <p>Copyright &#169; 2024 Vaibhav Jamloki. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
