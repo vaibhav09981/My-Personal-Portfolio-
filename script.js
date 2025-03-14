@@ -74,40 +74,80 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
   
-  // Projects slider navigation
-  let currentPosition = 0;
+  // Projects slider functionality
   const slider = document.getElementById('projectsSlider');
-  const projectWidth = 33.333; // Width of each project in percentage
-  
-  // Function to move the slider
+  const projects = document.querySelectorAll('.color-container');
+  let currentIndex = 0;
+  let isAnimating = false;
+
+  function updateSlider() {
+    const translateX = -currentIndex * 33.333;
+    slider.style.transform = `translateX(${translateX}%)`;
+    slider.style.transition = 'transform 0.5s ease';
+  }
+
   window.moveSlider = function(direction) {
-    // Pause the automatic animation
+    if (isAnimating) return;
+    isAnimating = true;
+
+    // Stop the automatic animation
     slider.style.animationPlayState = 'paused';
-    
+    slider.style.animation = 'none';
+
     if (direction === 'next') {
-      currentPosition -= projectWidth;
-      // If we've gone too far right, loop back to start
-      if (currentPosition < -66.666) {
-        currentPosition = 0;
+      currentIndex++;
+      if (currentIndex >= 3) { // Number of unique projects
+        currentIndex = 0;
       }
     } else {
-      currentPosition += projectWidth;
-      // If we've gone too far left, loop to end
-      if (currentPosition > 0) {
-        currentPosition = -66.666;
+      currentIndex--;
+      if (currentIndex < 0) {
+        currentIndex = 2; // Number of unique projects - 1
       }
     }
-    
-    // Apply the transform
-    slider.style.transform = `translateX(${currentPosition}%)`;
-    
-    // After a delay, resume the animation from the new position
+
+    updateSlider();
+
+    // Re-enable automatic animation after transition
     setTimeout(() => {
-      slider.style.animation = 'none';
-      slider.offsetHeight; // Trigger reflow
-      slider.style.animation = `slideProjects 20s linear infinite`;
+      isAnimating = false;
+      slider.style.animation = 'slideProjects 20s linear infinite';
       slider.style.animationPlayState = 'running';
-      slider.style.transform = '';
-    }, 5000); // Resume automatic animation after 5 seconds
+    }, 500);
   };
+
+  // Add touch support for mobile devices
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  slider.addEventListener('touchstart', (e) => {
+    touchStartX = e.touches[0].clientX;
+  });
+
+  slider.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].clientX;
+    handleSwipe();
+  });
+
+  function handleSwipe() {
+    const swipeThreshold = 50;
+    const swipeDistance = touchEndX - touchStartX;
+
+    if (Math.abs(swipeDistance) > swipeThreshold) {
+      if (swipeDistance > 0) {
+        moveSlider('prev');
+      } else {
+        moveSlider('next');
+      }
+    }
+  }
+
+  // Pause animation on hover
+  slider.addEventListener('mouseenter', () => {
+    slider.style.animationPlayState = 'paused';
+  });
+
+  slider.addEventListener('mouseleave', () => {
+    slider.style.animationPlayState = 'running';
+  });
 });
