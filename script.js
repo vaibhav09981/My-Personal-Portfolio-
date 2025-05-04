@@ -151,3 +151,45 @@ document.addEventListener('DOMContentLoaded', function() {
     slider.style.animationPlayState = 'running';
   });
 });
+
+// Theme toggle functionality
+function toggleTheme() {
+  const body = document.body;
+  const themeToggle = document.getElementById('theme-toggle');
+  const themeToggleMobile = document.getElementById('theme-toggle-mobile');
+  
+  body.classList.toggle('light-mode');
+  
+  // Update both toggle switches
+  if (themeToggle) themeToggle.checked = body.classList.contains('light-mode');
+  if (themeToggleMobile) themeToggleMobile.checked = body.classList.contains('light-mode');
+  
+  // Save theme preference
+  localStorage.setItem('theme', body.classList.contains('light-mode') ? 'light' : 'dark');
+}
+
+// Check for saved theme preference
+document.addEventListener('DOMContentLoaded', () => {
+  const savedTheme = localStorage.getItem('theme');
+  const themeToggle = document.getElementById('theme-toggle');
+  const themeToggleMobile = document.getElementById('theme-toggle-mobile');
+  
+  // Always start with light mode for first-time visitors
+  if (!savedTheme) {
+    document.body.classList.add('light-mode');
+    if (themeToggle) themeToggle.checked = true;
+    if (themeToggleMobile) themeToggleMobile.checked = true;
+    localStorage.setItem('theme', 'light');
+  } else {
+    // For returning visitors, use their saved preference
+    if (savedTheme === 'light') {
+      document.body.classList.add('light-mode');
+      if (themeToggle) themeToggle.checked = true;
+      if (themeToggleMobile) themeToggleMobile.checked = true;
+    } else {
+      document.body.classList.remove('light-mode');
+      if (themeToggle) themeToggle.checked = false;
+      if (themeToggleMobile) themeToggleMobile.checked = false;
+    }
+  }
+});
