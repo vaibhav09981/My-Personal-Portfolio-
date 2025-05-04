@@ -7,17 +7,7 @@
     <title>Vaibhav Jamloki | Frontend Developer & Cybersecurity Enthusiast</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-    <style>
-      body {
-        background-color: #f8f6f2;
-        color: #222222;
-      }
-
-      body.dark-mode {
-        background-color: #1a1a2e;
-        color: #ffffff;
-      }
-    </style>
+    <!-- Removed inline body background-color and color styles to allow CSS variables to work -->
     <script>
       if (!localStorage.getItem('theme') || localStorage.getItem('theme') === 'light') {
         document.documentElement.classList.add('light-mode');
