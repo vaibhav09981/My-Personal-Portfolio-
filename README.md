@@ -20,17 +20,6 @@ Email: [vaibhavjj99@gmail.com](mailto:vaibhavjj99@gmail.com)
 ## 🤝 Connect with Me
 
 - LinkedIn: [vaibhav-jamloki](https://www.linkedin.com/in/vaibhav-jamloki)  
-- Twitter: [@vaibhavjj99](https://twitter.com/vaibhavjj99)
-
----
-
-## 🛠️ Languages and Tools
-
-- **Languages:** C, C++, JavaScript, Python, SQL  
-- **Frontend:** HTML5, CSS3, Bootstrap, Tailwind CSS, React, React Native  
-- **Design & Tools:** Figma, Illustrator, Photoshop  
-- **Databases:** MongoDB, MySQL  
-- **Others:** Git, Linux
 
 ---
 
