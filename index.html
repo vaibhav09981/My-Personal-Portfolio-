@@ -5,16 +5,305 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Personal Portfolio</title>
+  <title>Vaibhav — Web Developer</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
 <body>
-  
-  <h1 class="reveal">Front End </h1>
-  <h1 class="reveal">Devoloper</h1>
+  <div class="container">
+    <header>
+      <div class="logo">Vaibhav</div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-layout">
+          <div class="hero-image">
+            <div class="profile-image">
+              <!-- Placeholder for profile image -->
+              <img src="https://via.placeholder.com/300" alt="Vaibhav's profile picture" />
+            </div>
+          </div>
+          <div class="hero-content">
+            <p class="greeting reveal-text">Hi There! 👋</p>
+            <h1 class="reveal-text">I am Vaibhav</h1>
+            <p class="subtitle reveal-text">A Passionate Web Developer</p>
+            <div class="typing-container reveal-text">
+              <span class="typing-prefix">I work with </span>
+              <span id="typing-text"></span>
+              <span class="typing-cursor">|</span>
+            </div>
+            <div class="cta-buttons reveal-text">
+              <a href="#" class="btn primary"><i class="fas fa-download"></i> Download Resume</a>
+              <a href="#contact" class="btn secondary"><i class="fas fa-envelope"></i> Contact Me</a>
+            </div>
+            <div class="social-icons reveal-text">
+              <a href="#" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about section-animate">
+        <div class="section-header">
+          <h2>About Me</h2>
+        </div>
+        <div class="about-content">
+          <div class="about-text animate-left">
+            <p>I am a passionate web developer with a strong focus on creating interactive and user-friendly web applications. My journey in web development started with a curiosity about how websites work and evolved into a deep passion for building digital experiences that people love.</p>
+            <p>With a background in both frontend and backend technologies, I strive to create solutions that are not only visually appealing but also functionally robust. I believe in writing clean, maintainable code and staying up-to-date with the latest industry trends and best practices.</p>
+            <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing my knowledge through blog posts and community forums.</p>
+          </div>
+          <div class="about-timeline animate-right">
+            <h3>My Journey</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4>2021 - Present</h4>
+                  <p>Working as a Full Stack Developer, building modern web applications with React, Node.js, and MongoDB.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4>2019 - 2021</h4>
+                  <p>Frontend Developer specializing in responsive design and interactive user interfaces.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4>2018 - 2019</h4>
+                  <p>Graduated with a degree in Computer Science and started my journey as a web developer.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills section-animate">
+        <div class="section-header">
+          <h2>Tech Stack</h2>
+        </div>
+        <div class="skills-content">
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-html5"></i>
+              </div>
+              <h3>HTML5</h3>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <h3>CSS3</h3>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-js"></i>
+              </div>
+              <h3>JavaScript</h3>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-react"></i>
+              </div>
+              <h3>ReactJS</h3>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-node-js"></i>
+              </div>
+              <h3>NodeJS</h3>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <h3>MongoDB</h3>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-git-alt"></i>
+              </div>
+              <h3>Git</h3>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-sass"></i>
+              </div>
+              <h3>Sass</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects section-animate">
+        <div class="section-header">
+          <h2>Projects</h2>
+        </div>
+        <div class="project-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://via.placeholder.com/350x200" alt="E-Commerce Website">
+            </div>
+            <div class="project-info">
+              <h3>E-Commerce Website</h3>
+              <p>A fully responsive e-commerce platform with product filtering, cart functionality, and secure checkout process.</p>
+              <div class="project-tech">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+                <span>Stripe</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> View Live</a>
+                <a href="#" class="btn"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://via.placeholder.com/350x200" alt="Task Management App">
+            </div>
+            <div class="project-info">
+              <h3>Task Management App</h3>
+              <p>A drag-and-drop task management application with user authentication, task categories, and progress tracking.</p>
+              <div class="project-tech">
+                <span>JavaScript</span>
+                <span>Express</span>
+                <span>MongoDB</span>
+                <span>JWT</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> View Live</a>
+                <a href="#" class="btn"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://via.placeholder.com/350x200" alt="Weather Dashboard">
+            </div>
+            <div class="project-info">
+              <h3>Weather Dashboard</h3>
+              <p>A real-time weather application that displays current conditions and forecasts for any location worldwide.</p>
+              <div class="project-tech">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Weather API</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> View Live</a>
+                <a href="#" class="btn"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="https://via.placeholder.com/350x200" alt="Social Media Dashboard">
+            </div>
+            <div class="project-info">
+              <h3>Social Media Dashboard</h3>
+              <p>A comprehensive dashboard that aggregates and displays analytics from multiple social media platforms.</p>
+              <div class="project-tech">
+                <span>React</span>
+                <span>Chart.js</span>
+                <span>Firebase</span>
+                <span>Social APIs</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn"><i class="fas fa-external-link-alt"></i> View Live</a>
+                <a href="#" class="btn"><i class="fab fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact section-animate">
+        <div class="section-header">
+          <h2>Get in Touch</h2>
+        </div>
+        <div class="contact-content">
+          <div class="contact-text animate-left">
+            <p>I'm always open to new opportunities and collaborations. Whether you have a project in mind, a question about web development, or just want to connect, I'd love to hear from you!</p>
+            <div class="contact-info">
+              <div class="contact-info-item">
+                <i class="fas fa-envelope"></i>
+                <p>vaibhav@example.com</p>
+              </div>
+              <div class="contact-info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>New Delhi, India</p>
+              </div>
+              <div class="contact-social">
+                <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form animate-right">
+            <div class="form-group form-field">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-group form-field">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Your email address" required>
+            </div>
+            <div class="form-group form-field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Subject of your message" required>
+            </div>
+            <div class="form-group form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-field">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">Vaibhav</div>
+        <div class="social-links">
+          <a href="#" target="_blank" title="Visit my Behance profile"><i class="fab fa-behance" aria-hidden="true"></i><span class="sr-only">Behance</span></a>
+          <a href="#" target="_blank" title="Visit my Dribbble profile"><i class="fab fa-dribbble" aria-hidden="true"></i><span class="sr-only">Dribbble</span></a>
+          <a href="#" target="_blank" title="Visit my Instagram profile"><i class="fab fa-instagram" aria-hidden="true"></i><span class="sr-only">Instagram</span></a>
+          <a href="#" target="_blank" title="Visit my LinkedIn profile"><i class="fab fa-linkedin-in" aria-hidden="true"></i><span class="sr-only">LinkedIn</span></a>
+        </div>
+        <p class="copyright">© 2023 Vaibhav. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
-    integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5q6X0p+X0Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q=="
+    integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5q6X0p+X0Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q5Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="script.js"></script>
 </body>
