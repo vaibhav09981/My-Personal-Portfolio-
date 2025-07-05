@@ -14,10 +14,22 @@ window.addEventListener('DOMContentLoaded', () => {
         applyTransform(cyanWhitePage, 'translateY(0)');
     }, 100); // small delay before animation starts
 
-    // After slide-up animation ends, change background color of cyanWhitePage and blackPage to green shade and hide blackPage
+    // After slide-up animation ends, hide blackPage and trigger cyanWhitePage slide-up
     blackPage.addEventListener('transitionend', (event) => {
         if (event.propertyName === 'transform' && blackPage.classList.contains('slide-up')) {
             blackPage.style.display = 'none';
+
+            // Trigger cyanWhitePage slide-up animation lasting 0.3s
+            cyanWhitePage.classList.add('slide-up');
+        }
+    });
+
+    // After cyanWhitePage slide-up animation ends, show lightGreyPage
+    const lightGreyPage = document.getElementById('light-grey-page');
+
+    cyanWhitePage.addEventListener('transitionend', (event) => {
+        if (event.propertyName === 'transform' && cyanWhitePage.classList.contains('slide-up')) {
+            lightGreyPage.style.transform = 'translateY(0)';
         }
     });
 
