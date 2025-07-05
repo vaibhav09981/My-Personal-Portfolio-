@@ -1,0 +1,162 @@
+/* Reset and base styles */
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Roboto Flex', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    position: fixed; /* Prevents mobile browser address bar from affecting height */
+}
+
+/* Common page styles */
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4.5rem;
+    transition: transform 1.03s ease;
+}
+
+/* Black page styles */
+.black-page {
+    background-color: black;
+    color: white;
+    z-index: 2;
+}
+
+/* Cyan white page styles */
+.cyan-white-page {
+    background-color: rgb(61, 212, 124);
+    z-index: 1;
+}
+
+/* Font styles */
+.birthstone {
+    font-family: 'Birthstone', cursive;
+    font-weight: bold;
+}
+
+.roboto-flex {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 4.5rem;
+}
+
+/* Slide up animation triggered by adding .slide-up class */
+.slide-up {
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+}
+
+/* Ensure hardware acceleration for smoother animations */
+.page {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+
+    will-change: transform;
+    touch-action: manipulation;
+}
+
+/* Mobile responsiveness */
+/* Large tablets and small desktops */
+@media (max-width: 1024px) {
+    .page {
+        font-size: 3.5rem;
+    }
+    .roboto-flex {
+        font-size: 3.5rem;
+    }
+}
+
+/* Tablets and large phones */
+@media (max-width: 768px) {
+    .page {
+        font-size: 3rem;
+        padding: 0 1.5rem;
+    }
+    .roboto-flex {
+        font-size: 3rem;
+    }
+    .birthstone {
+        font-size: 3.2rem;
+    }
+}
+
+/* Small phones */
+@media (max-width: 600px) {
+    .page {
+        font-size: 2.5rem;
+        padding: 0 1rem;
+        text-align: center;
+    }
+    .birthstone {
+        font-weight: bold;
+        font-size: 2.7rem;
+    }
+    .roboto-flex {
+        font-size: 2.5rem;
+    }
+    .birthstone, .roboto-flex {
+        display: inline-block;
+        white-space: nowrap;
+    }
+    #black-page {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        gap: 0.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Extra small phones */
+@media (max-width: 375px) {
+    .page {
+        font-size: 2rem;
+        padding: 0 0.8rem;
+    }
+    .roboto-flex {
+        font-size: 2rem;
+    }
+    .birthstone {
+        font-size: 2.2rem;
+    }
+}
+
+/* Landscape orientation for mobile devices */
+@media (max-height: 500px) and (orientation: landscape) {
+    .page {
+        padding: 1rem;
+    }
+    #black-page {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    .birthstone, .roboto-flex {
+        font-size: 2rem;
+    }
+}
+
+/* High pixel density screens (retina displays) */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .page {
+        -webkit-font-smoothing: subpixel-antialiased;
+    }
+}
