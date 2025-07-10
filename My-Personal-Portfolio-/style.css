@@ -3,7 +3,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: #404040; /* Darker grey background */
+  background: #2f2f2f; /* Dark grey background */
   font-family: 'Poppins', sans-serif;
   color: #ffffff;
   transition: background 0.5s ease;
@@ -11,50 +11,42 @@ html, body {
 
 /* Navbar styles */
 .navbar {
+  position: fixed;
+  background-color: #000000; /* plain black navbar */
+  left: 20px;
+  right: 20px;
+  top: 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.6); /* floating effect */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: #000000; /* Pure black navbar */
-  box-shadow:
-    0 4px 30px #0d053b;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 12px;
-  position: fixed;
-  width: auto;
-  max-width: 900px;
-  top: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
-  right: auto;
-  z-index: 10000;
-  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  z-index: 1000;
+  gap: 20px;
   animation: fadeInDown 1s ease forwards;
 }
 
 .navbar:hover,
 .navbar:focus-within {
-  box-shadow: 
-    0 6px 40px #0d053b;
-  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.85);
+  background-color: #000000;
 }
 
-.navbar-left,
-.navbar-center,
-.navbar-right {
+.navbar-left, .navbar-center, .navbar-right {
   display: flex;
   align-items: center;
 }
 
+.navbar-center {
+  flex-grow: 1;
+  justify-content: center;
+}
+
 .navbar-email {
-  font-weight: 700;
-  font-size: 1rem;
-  color: #bbbbbb;
-  cursor: pointer;
-  -webkit-user-select: none;
-  user-select: none;
-  transition: color 0.3s ease, text-decoration 0.3s ease;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
 }
 
 .navbar-email:focus,
@@ -67,48 +59,59 @@ html, body {
 
 .connect-btn {
   background-color: #007bff;
-  color: white;
   border: none;
-  padding: 0.5rem 1.2rem;
-  border-radius: 25px;
-  font-weight: 600;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.4);
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
 }
 
-.connect-btn:hover,
-.connect-btn:focus {
+.connect-btn:hover {
   background-color: #0056b3;
-  box-shadow: 0 6px 12px rgba(0, 86, 179, 0.6);
-  outline: none;
-  transform: scale(1.05);
 }
 
 /* Animations */
 @keyframes fadeInDown {
   0% {
     opacity: 0;
-    transform: translateX(-50%) translateY(-20px);
+    transform: translateY(-20px);
   }
   100% {
     opacity: 1;
-    transform: translateX(-50%) translateY(0);
+    transform: translateY(0);
   }
 }
 
 /* Responsive */
 @media (max-width: 600px) {
   .navbar {
+    width: 90%;
     flex-direction: column;
     gap: 0.5rem;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    flex-wrap: wrap;
   }
-  .navbar-left,
-  .navbar-center,
-  .navbar-right {
+
+  .navbar-center {
+    order: 3;
+    width: 100%;
     justify-content: center;
   }
-  .navbar-center {
-    display: none;
+
+  .navbar-left,
+  .navbar-right {
+    flex: 1 1 auto;
+    justify-content: center;
+  }
+
+  .connect-btn {
+    padding: 6px 12px;
+    font-size: 0.85rem;
   }
 }
