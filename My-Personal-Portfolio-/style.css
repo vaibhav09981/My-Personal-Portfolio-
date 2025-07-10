@@ -1,5 +1,4 @@
 html, body {
-html, body {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -45,13 +44,9 @@ html, body {
 }
 
 .navbar-email {
-  font-weight: 700;
-  font-size: 1rem;
-  color: #bbbbbb;
-  cursor: pointer;
-  -webkit-user-select: none;
-  user-select: none;
-  transition: color 0.3s ease, text-decoration 0.3s ease;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
 }
 
 .navbar-email:focus,
@@ -64,22 +59,17 @@ html, body {
 
 .connect-btn {
   background-color: #007bff;
-  color: white;
   border: none;
-  padding: 0.5rem 1.2rem;
-  border-radius: 25px;
-  font-weight: 600;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.4);
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
 }
 
-.connect-btn:hover,
-.connect-btn:focus {
+.connect-btn:hover {
   background-color: #0056b3;
-  box-shadow: 0 6px 12px rgba(0, 86, 179, 0.6);
-  outline: none;
-  transform: scale(1.05);
 }
 
 /* Animations */
