@@ -3,7 +3,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background: #404040; /* Darker grey background */
+  background: #1a1a1a; /* Darker dark grey background */
   font-family: 'Poppins', sans-serif;
   color: #ffffff;
   transition: background 0.5s ease;
@@ -15,16 +15,12 @@ html, body {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #000000; /* Pure black navbar */
-  box-shadow:
-    0 4px 30px #0d053b;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background-color: #000000; /* Plain black navbar */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7); /* Floating lifted effect */
   border-radius: 12px;
   position: fixed;
-  width: auto;
-  max-width: 900px;
-  top: 1rem;
+  width: 90%;
+  top: 2rem;
   left: 50%;
   transform: translateX(-50%);
   right: auto;
@@ -35,9 +31,8 @@ html, body {
 
 .navbar:hover,
 .navbar:focus-within {
-  box-shadow: 
-    0 6px 40px #0d053b;
-  background-color: rgba(0, 0, 0, 0.85);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.85);
+  background-color: #000000;
 }
 
 .navbar-left,
@@ -100,6 +95,7 @@ html, body {
 /* Responsive */
 @media (max-width: 600px) {
   .navbar {
+    width: 90%;
     flex-direction: column;
     gap: 0.5rem;
   }
