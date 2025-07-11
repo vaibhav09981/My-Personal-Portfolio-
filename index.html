@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,29 +8,28 @@
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <nav class="navbar">
-    <div class="navbar-left">
-      <span class="navbar-email">VAIBHAVJJ99@GMAIL.COM</span>
-    </div>
-    <div class="navbar-center">
-      <!-- Empty as requested -->
-    </div>
-    <div class="navbar-right">
-      <div class="dropdown">
-        <button class="connect-btn">Connect with me</button>
-        <div class="dropdown-content">
-          <a href="https://github.com/vaibhav09981" target="_blank" rel="noopener noreferrer">
-            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
-          </a>
-          <a href="https://www.linkedin.com/in/vaibhav-jamloki/" target="_blank" rel="noopener noreferrer">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
-          </a>
+
+<body class="bg-neutral-900">
+  <section class="w-full">
+    <div class="w-full my-4">
+      <nav
+        class="max-w-6xl mx-auto flex bg-black justify-between items-center px-6 py-4 rounded-xl shadow-lg shadow-neutral-600">
+        <div class="text-neutral-200">
+          <span class="lowercase">VAIBHAVJJ99@GMAIL.COM</span>
         </div>
-      </div>
+        <div class="relative">
+          <button id="menu-toggle" class="bg-white px-4 py-2 rounded-xl">Connect With Me</button>
+          <div id="menu-content" class="hidden flex-col absolute top-full right-0 mt-2 bg-neutral-200 rounded-lg shadow-xl z-10">
+            <a href="" target="_blank" class="px-4 py-2 hover:bg-neutral-300 text-black">Twitter</a>
+            <a href="" target="_blank" class="px-4 py-2 hover:bg-neutral-300 text-black">GitHub</a>
+            <a href="" target="_blank" class="px-4 py-2 hover:bg-neutral-300 text-black">LinkedIn</a>
+          </div>
+        </div>
+      </nav>
     </div>
-  </nav>
+  </section>
 
   <script src="./script.js"></script>
 </body>
+
 </html>
