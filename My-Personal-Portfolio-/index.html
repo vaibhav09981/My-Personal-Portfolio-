@@ -1,32 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Minimal Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <nav class="navbar">
-    <div class="navbar-left">
-      <span class="navbar-email">VAIBHAVJJ99@GMAIL.COM</span>
+<body class="bg-gray-900 text-white min-h-screen">
+
+  <nav class="fixed top-8 left-1/2 transform -translate-x-1/2 w-11/12 max-w-5xl bg-black rounded-xl shadow-lg flex justify-between items-center px-8 py-4 z-50">
+    <div class="flex items-center">
+      <span tabindex="0" class="font-semibold text-gray-400 cursor-pointer select-none focus:outline-none focus:text-blue-400 hover:text-blue-400 underline-offset-2 hover:underline">VAIBHAVJJ99@GMAIL.COM</span>
     </div>
-    <div class="navbar-center">
-      <!-- Empty as requested -->
+    <div class="flex items-center">
+      <!-- Empty center -->
     </div>
-    <div class="navbar-right">
-      <div class="dropdown">
-        <button class="connect-btn">Connect with me</button>
-        <div class="dropdown-content">
-          <a href="https://github.com/vaibhav09981" target="_blank" rel="noopener noreferrer">
-            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
-          </a>
-          <a href="https://www.linkedin.com/in/vaibhav-jamloki/" target="_blank" rel="noopener noreferrer">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
-          </a>
-        </div>
-      </div>
+    <div>
+      <button class="bg-blue-600 hover:bg-blue-700 focus:bg-blue-700 text-white font-semibold py-2 px-5 rounded-full shadow-md transition transform hover:scale-105 focus:outline-none">Connect with me</button>
     </div>
   </nav>
+
 </body>
 </html>
