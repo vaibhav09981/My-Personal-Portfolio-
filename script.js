@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
         j++;
         typewriterTextElement.innerHTML = `<strong>${currentPhrase}</strong>`;
         if (j === phrases[i].length) {
-          isDeleting = true;
+          isDeleting = true; 
           setTimeout(typeWriter, 500); // Pause at end of phrase
         } else {
           setTimeout(typeWriter, 50); // Typing speed
