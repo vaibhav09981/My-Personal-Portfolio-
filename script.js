@@ -18,9 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
         typewriterTextElement.innerHTML = `<strong>${currentPhrase}</strong>`;
         if (j === phrases[i].length) {
           isDeleting = true; 
-          setTimeout(typeWriter, 500); // Pause at end of phrase
+          setTimeout(typeWriter, 500);
         } else {
-          setTimeout(typeWriter, 50); // Typing speed
+          setTimeout(typeWriter, 50);
         }
       } else {
         currentPhrase = phrases[i].substring(0, j - 1);
@@ -29,14 +29,14 @@ document.addEventListener('DOMContentLoaded', function() {
         if (j === 0) {
           isDeleting = false;
           i++;
-          setTimeout(typeWriter, 250); // Pause before typing next phrase
+          setTimeout(typeWriter, 250);
         } else {
-          setTimeout(typeWriter, 25); // Deleting speed
+          setTimeout(typeWriter, 25);
         }
       }
     } else {
-      i = 0; // Loop back to the beginning
-      setTimeout(typeWriter, 500); // Pause before restarting
+      i = 0; 
+      setTimeout(typeWriter, 500); 
     }
   }
 
