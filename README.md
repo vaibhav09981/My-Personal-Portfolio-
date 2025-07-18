@@ -18,7 +18,6 @@ The website showcases a simple animated layout using GSAP for animations. It inc
 - `index.html`: The main HTML file containing the structure of the webpage.
 - `style.css`: The CSS file containing styles for the webpage.
 - `script.js`: The JavaScript file containing GSAP animation logic.
-
 ## How to Run
 
 Open the `index.html` file in any modern web browser to view the portfolio website.
