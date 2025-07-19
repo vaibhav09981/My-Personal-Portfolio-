@@ -40,13 +40,52 @@
 
   </section>
 
-  <section id="about-me" class="w-full max-w-6xl mx-auto my-4 px-0 h-screen flex flex-col items-center justify-center mb-16">
+  <section id="about-me" class="w-full max-w-6xl mx-auto my-4 px-0 h-screen flex flex-col items-center justify-center mb-0">
     <h2 class="text-blue-500 text-6xl font-bold text-center">About Me</h2>
     <p class="text-white text-xl md:text-2xl font-bold text-center mt-4">Soon-to-be <span class="text-blue-500">Computer Science graduate(2024-2028)</span>, I am eager to continue exploring the inspiring and innovative field of <span class="text-blue-500">Web Development</span>. I also have experience in <span class="text-blue-500">marketing and PR handling</span> for various projects.</p>
+  </section>
+
+  <section id="languages-known" class="w-full max-w-6xl mx-auto my-4 px-0 flex flex-col items-center justify-center mb-16">
+    <h2 class="text-blue-500 text-4xl font-bold text-center mb-4">Languages & Technologies I Know</h2>
+    <p class="text-white text-lg text-center mb-8">Here are some of the programming languages and technologies I've worked with:</p>
+    <div class="flex flex-wrap justify-center items-center gap-4 md:gap-8">
+      <!-- For desktop: 5 logos per line, for mobile: 3 logos per line -->
+      <style>
+        @media (min-width: 768px) {
+          #languages-known .flex-wrap img {
+            width: calc(20% - 1.6rem); /* 5 logos per line with gap-8 (32px) */
+          }
+        }
+        @media (max-width: 767px) {
+          #languages-known .flex-wrap img {
+            width: calc(33.33% - 1.06rem); /* 3 logos per line with gap-4 (16px) */
+          }
+        }
+      </style>
+      <img src="c.png" alt="C" class="w-24 h-24 object-contain max-w-full transition-transform duration-300 ease-in-out hover:-translate-y-2">
+      <img src="c++.png" alt="C++" class="w-24 h-24 object-contain max-w-full transition-transform duration-300 ease-in-out hover:-translate-y-2">
+      <img src="css.png" alt="CSS" class="w-24 h-24 object-contain max-w-full transition-transform duration-300 ease-in-out hover:-translate-y-2">
+      <img src="html.webp" alt="HTML" class="w-24 h-24 object-contain max-w-full transition-transform duration-300 ease-in-out hover:-translate-y-2">
+      <img src="java.webp" alt="Java" class="w-24 h-24 object-contain max-w-full transition-transform duration-300 ease-in-out hover:-translate-y-2">
+      <img src="JavaScript.png" alt="JavaScript" class="w-24 h-24 object-contain max-w-full transition-transform duration-300 ease-in-out hover:-translate-y-2">
+      <img src="node.png" alt="Node.js" class="w-24 h-24 object-contain max-w-full transition-transform duration-300 ease-in-out hover:-translate-y-2">
+      <img src="python.png" alt="Python" class="w-24 h-24 object-contain max-w-full transition-transform duration-300 ease-in-out hover:-translate-y-2">
+      <img src="React.png" alt="React" class="w-24 h-24 object-contain max-w-full transition-transform duration-300 ease-in-out hover:-translate-y-2">
+      <img src="Tailwind.png" alt="Tailwind CSS" class="w-24 h-24 object-contain max-w-full transition-transform duration-300 ease-in-out hover:-translate-y-2">
+      <img src="ts.png" alt="TypeScript" class="w-24 h-24 object-contain max-w-full transition-transform duration-300 ease-in-out hover:-translate-y-2">
+      <img src="mysql.png" alt="MySQL" class="w-24 h-24 object-contain max-w-full transition-transform duration-300 ease-in-out hover:-translate-y-2">
+    </div>
+  </section>
+
+  <section id="my-projects" class="w-full max-w-6xl mx-auto my-48 px-0 flex flex-col items-center justify-center mb-16">
+    <h2 class="text-blue-500 text-4xl font-bold text-center mb-4">My Projects</h2>
+    <div class="flex flex-wrap justify-center items-center gap-4 md:gap-8">
+      <!-- Project cards will go here -->
+    </div>
   </section>
 
   <script src="./script.js"></script>
 </body>
 
 </html>
-
+  
