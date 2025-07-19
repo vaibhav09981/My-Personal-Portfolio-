@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
   const phrases = [
     'Web developer',
     'Front-End Developer',
@@ -47,6 +48,8 @@ document.addEventListener('DOMContentLoaded', function() {
       e.preventDefault();
       document.querySelector(this.getAttribute('href')).scrollIntoView({
           behavior: 'smooth'
-      );
+      });
   });
+
+
 });
