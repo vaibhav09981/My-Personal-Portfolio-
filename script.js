@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-document.addEventListener('DOMContentLoaded', function() {
   const phrases = [
     'Web developer',
     'Front-End Developer',
@@ -31,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
           isDeleting = false;
           i++;
           setTimeout(typeWriter, 250);
-        } else {
+        } else {  
           setTimeout(typeWriter, 25);
         }
       }
