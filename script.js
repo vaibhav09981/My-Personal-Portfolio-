@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
   typeWriter();
 
   // Smooth scrolling for "Know More About Me" button
-  document.querySelector('a[href="#languages-known"]').addEventListener('click', function(e) {
+  document.querySelector('a[href="#about-me"]').addEventListener('click', function(e) {
       e.preventDefault();
       document.querySelector(this.getAttribute('href')).scrollIntoView({
           behavior: 'smooth'
