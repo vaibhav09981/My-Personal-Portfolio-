@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ensure completely black background with no margins/padding */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
