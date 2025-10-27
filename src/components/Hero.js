@@ -16,44 +16,44 @@ const Hero = () => {
   }, [index, fullText]);
 
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center text-center px-6 relative overflow-hidden">
+    <section className="min-h-screen flex flex-col justify-center items-center text-center py-20 px-6 relative overflow-hidden">
       {/* Background gradient effect */}
       <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/20 via-transparent to-purple-900/20"></div>
 
       {/* Main content */}
       <div className="relative z-10 max-w-4xl">
         {/* Greeting */}
-        <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 animate-fade-in">
+        <h1 className="text-5xl md:text-7xl font-bold text-white mb-8 animate-fade-in">
           Hi, I'm Vaibhav Jamloki <span className="animate-wave"></span>
         </h1>
 
         {/* Role with typewriter effect */}
-        <h2 className="text-2xl md:text-4xl font-semibold text-cyan-400 mb-6 h-12">
+        <h2 className="text-2xl md:text-4xl font-semibold text-cyan-400 mb-10 h-12">
           {displayText}<span className="animate-pulse">|</span>
         </h2>
 
         {/* Tagline */}
-        <p className="text-xl md:text-2xl text-gray-300 mb-8">
+        <p className="text-lg md:text-xl text-gray-300 mb-10">
           Crafting Clean & Interactive Web Experiences
         </p>
 
         {/* Subheadline */}
-        <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
+        <p className="text-base text-gray-400 mb-16 max-w-2xl mx-auto">
           I design and build responsive, user-focused web applications using React and Tailwind CSS.
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-          <a href="#projects" className="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+          <a href="https://github.com/vaibhav09981?tab=repositories" target="_blank" rel="noopener noreferrer" className="bg-cyan-500 hover:bg-cyan-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-200">
             View My Work
           </a>
           <a href="#contact" className="border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black px-8 py-3 rounded-lg font-semibold transition-colors duration-200">
             Let's Connect
           </a>
         </div>
-
+        
         {/* Social Icons */}
-        <div className="flex justify-center space-x-6 mb-12">
+        <div className="flex justify-center space-x-6 mb-16">
           <a href="https://www.linkedin.com/in/vaibhav-jamloki/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-cyan-400 transition-colors duration-200">
             <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
               <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
