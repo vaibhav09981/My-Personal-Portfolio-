@@ -2,7 +2,7 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center text-center py-20 px-6 relative overflow-hidden">
+    <section id="home" className="min-h-screen flex flex-col justify-center items-center text-center py-20 px-6 relative overflow-hidden">
       {/* Background gradient effect */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900/20 via-transparent to-gray-900/20"></div>
 
