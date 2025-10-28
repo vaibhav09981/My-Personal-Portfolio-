@@ -3,6 +3,7 @@ import './App.css';
 import Intro from './components/Intro';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import About from './components/About';
 
 function App() {
   const [showIntro, setShowIntro] = useState(true);
@@ -10,7 +11,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowIntro(false);
-    }, 290); // 3 seconds delay
+    }, 310); // 3 seconds delay
 
     return () => clearTimeout(timer);
   }, []);
@@ -22,6 +23,7 @@ function App() {
         <>
           <Navbar />
           <Hero />
+          <About />
         </>
       )}
     </div>
