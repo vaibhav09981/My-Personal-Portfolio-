@@ -4,6 +4,7 @@ import Intro from './components/Intro';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
+import Projects from './components/Projects';
 
 function App() {
   const [showIntro, setShowIntro] = useState(true);
@@ -24,6 +25,7 @@ function App() {
           <Navbar />
           <Hero />
           <About />
+          <Projects />
         </>
       )}
     </div>
