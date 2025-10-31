@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 function App() {
   const [showIntro, setShowIntro] = useState(true);
@@ -26,6 +27,7 @@ function App() {
           <Hero />
           <About />
           <Projects />
+          <Contact />
         </>
       )}
     </div>
