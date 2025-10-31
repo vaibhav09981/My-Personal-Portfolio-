@@ -4,14 +4,6 @@
 
 A modern, responsive personal portfolio website built with React and Tailwind CSS. This project showcases my skills as a frontend developer and provides an interactive platform to display my work, services, and contact information.
 
-## 🚀 Features
-
-- **Responsive Design**: Optimized for all devices and screen sizes
-- **Modern UI**: Clean, minimalist design with smooth animations
-- **Interactive Elements**: Hover effects, transitions, and engaging user interactions
-- **Fast Performance**: Built with React for optimal performance and user experience
-- **SEO Friendly**: Proper meta tags and semantic HTML structure
-
 ## 🛠️ Tech Stack
 
 - **Frontend**: React 18, Tailwind CSS
